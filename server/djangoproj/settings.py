@@ -28,10 +28,9 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', 'https://nullterra180-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 # Deployed URL in SN Labs environment:
-# https://nullterra180-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai/about
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['https://nullterra180-8000.theianext-1-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
