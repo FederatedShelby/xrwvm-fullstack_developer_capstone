@@ -1,4 +1,4 @@
-from django.shortcuts import render
+# from django.shortcuts import render
 # from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import User
 # from django.shortcuts import get_object_or_404, render, redirect
@@ -147,6 +147,9 @@ def add_review(request):
             response = post_review(data)
             return JsonResponse({"status": 200, "response": response})
         except Exception as err:
-            return JsonResponse({"status": 401, "message": f"Error in posting review: {err=}"})
+            return JsonResponse({
+                "status": 401,
+                "message": f"Error in posting review: {err=}",
+            })
     else:
         return JsonResponse({"status": 403, "message": "Unauthorized"})
