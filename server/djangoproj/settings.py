@@ -33,12 +33,12 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "https://nullterra180-8000.theianext-1-labs" +
-        "-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai",
+    "-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai",
 ]
 # Deployed URL in SN Labs environment:
 CSRF_TRUSTED_ORIGINS = [
     "https://nullterra180-8000.theianext-1-labs" +
-        "-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai"
+    "-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai"
 ]
 
 REST_FRAMEWORK = {
@@ -104,19 +104,19 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password" +
-            "_validation.UserAttributeSimilarityValidator",
+        "_validation.UserAttributeSimilarityValidator",
     },
     {
         "NAME": "django.contrib.auth.password" +
-            "_validation.MinimumLengthValidator",
+        "_validation.MinimumLengthValidator",
     },
     {
         "NAME": "django.contrib.auth.password" +
-            "_validation.CommonPasswordValidator",
+        "_validation.CommonPasswordValidator",
     },
     {
         "NAME": "django.contrib.auth.password" +
-            "_validation.NumericPasswordValidator",
+        "_validation.NumericPasswordValidator",
     },
 ]
 
